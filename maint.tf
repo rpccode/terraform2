@@ -150,18 +150,18 @@ resource "railway_variable" "nest_api_api_key" {
 # }
 
 # # Activador de despliegue para el servicio Nest.js
-resource "railway_deployment_trigger" "nest_trigger" {
-  repository     = "rpccode/car-nest-api"
-  branch         = "master"
-  check_suites   = true
-  environment_id = railway_project.terraform_proyect.default_environment.id
-  service_id     = railway_service.nest_api.id
-}
-resource "railway_deployment_trigger" "go_trigger" {
-  repository     = "rpccode/car-go-api"
-  branch         = "master"
-  check_suites   = true
-  environment_id = railway_project.terraform_proyect.default_environment.id
-  service_id     = railway_service.nest_api.id
-}
+# resource "railway_deployment_trigger" "nest_trigger" {
+#   repository     = "rpccode/car-nest-api"
+#   branch         = "master"
+#   check_suites   = true
+#   environment_id = railway_project.terraform_proyect.default_environment.id
+#   service_id     = railway_service.nest_api.id
+# }
+# resource "railway_deployment_trigger" "go_trigger" {
+#   repository     = "rpccode/car-go-api"
+#   branch         = "master"
+#   check_suites   = true
+#   environment_id = railway_project.terraform_proyect.default_environment.id
+#   service_id     = railway_service.nest_api.id
+# }
 
